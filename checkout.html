@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - BUY COCAINE STORE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f7ea;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product-info img {
+            max-width: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .product-details {
+            display: flex;
+            align-items: center;
+        }
+        .barcode img {
+            margin: 10px 0;
+            width: 50px;
+            height: auto;
+        }
+        .wallet {
+            background-color: #f1f8e9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .back-btn, .send-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #2e7d32;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .back-btn:hover, .send-btn:hover {
+            background-color: #1b5e20;
+        }
+        .contact-form input, .contact-form textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Checkout</h1>
+    </div>
+    <div class="container">
+        <h2>Order Summary</h2>
+        <div class="product-info">
+            <div class="product-details">
+                <img src="images/product-placeholder.png" alt="Product Image" id="productImage">
+                <div>
+                    <p><strong>Product:</strong> <span id="productName"></span></p>
+                    <p><strong>Price:</strong> $<span id="productPrice"></span> / <span id="productCrypto"></span> BTC</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="payment-info">
+            <p><strong>Scan Barcode:</strong></p>
+            <img src="images/img19.jpeg" style="width: 300px; height: 300px;">
+            <h3>BTC Wallet</h3>
+            <p class="wallet">Bitcoin Wallet: bc1q3dgr59jwcf40s2r5clq4kpsr54ku8uku3pfny9</p>
+           
+            <p><strong>Scan Barcode:</strong></p>
+            <img src="images/img20.jpeg" style="width: 300px; height: 300px;">
+            <h3>ETH Wallet</h3>
+            <p class="wallet">Ethereum Wallet: 0x45916c297C9863fA11C7460B2D4710dB8a05cF90</p>
+        </div>
+
+        <div class="contact-form">
+            <h3>Contact Information</h3>
+            <form action="https://formspree.io/f/xlddoylg" method="POST">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your delivery address" required></textarea>
+                
+                <label for="address">Products Ordered:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter Products Names" required></textarea>
+             
+                <label for="address">Order Quantity:</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter Order Quantity" required></textarea>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </div>
+        <a href="index.html" class="back-btn">Back to Homepage</a>
+    </div>
+   
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const productName = params.get('product') || "Unknown Product";
+        const productPrice = params.get('price') || "0.00";
+        const productCrypto = params.get('crypto') || "0.000000";
+        const productImage = params.get('image') || "images/product-placeholder.png";
+    
+        document.getElementById('productName').textContent = productName;
+        document.getElementById('productPrice').textContent = productPrice;
+        document.getElementById('productCrypto').textContent = productCrypto;
+        document.getElementById('productImage').src = productImage;
+    
+        // Corrected the template string syntax here
+        const orderDetails = 'Product: ${productName}\nPrice: $${productPrice} / ${productCrypto} BTC';
+        document.getElementById('orderDetails').textContent = orderDetails;
+    </script>
+</body>
+</html>

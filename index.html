@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BUY COCAINE STORE</title>
+  <nav>
+    <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="faqs.html">FAQ</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #999898;
+    }
+    header {
+      background-color: #0a7b8f;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .intro-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #f8f9fa;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    .intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Change to align items to the left, removing extra space */
+}
+
+.about-text {
+  width: 50%; /* Adjust this to control the text area width */
+  margin-right: 10px; /* Adjust the margin to control space between text and image */
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+}
+
+
+    .intro-section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .intro-section p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .product {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      text-align: center;
+      padding: 20px;
+    }
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .product h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #333;
+    }
+    .product p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .quantity-select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .cta-button {
+      background-color: #1083a0;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Buy Cocaine Store</h1>
+  <p>Your one-stop shop for the finest and purest products.</p>
+</header>
+
+<section class="intro-section">
+  <div class="about-text">
+    <h2>About Our Products</h2>
+    <p>At Buy Cocaine Store, we offer the highest quality products, carefully sourced from trusted suppliers. Each product is crafted with purity and potency in mind, ensuring that you get the best experience possible. Browse through our selection and place your order today to enjoy premium products delivered right to your door.</p>
+  </div>
+  <div class="about-image">
+    <img src="images/img3.jpeg" alt="About our products">
+  </div>
+</section>
+
+
+<div class="container">
+  <!-- Product 1 -->
+  <div class="product">
+    <img src="images/img1.jpeg" alt="Fishscale Cocaine" class="product-image">
+    <h3>Fishscale Cocaine(5g)</h3>
+    <p>Uncut, high-quality cocaine with a sparkling shiny look and over 97% purity.</p>
+    <p class="price">Price: $300 / 0.0030  BTC</p>
+    <button onclick="redirectToCheckout('Fishscale Cocaine', 300, '0.0030  BTC', 'images/img1.jpeg')">Buy Now</button>
+    
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <img src="images/img2.jpeg" alt="Bolivian Cocaine" class="product-image">
+    <h3>Bolivian Cocaine(7g)</h3>
+    <p>One of the purest forms of cocaine, with a purity of up to 98%.</p>
+    <p class="price">Price: $250 / 0.0025  BTC</p>
+    <button onclick="redirectToCheckout('Bolivian Cocaine', 250, '0.0025  BTC', 'images/img2.jpeg')">Buy Now</button>
+  
+  </div>
+
+  <!-- Product 3 -->
+  <div class="product">
+    <img src="images/img16.jpeg" alt="Peruvian Pink Flake" class="product-image">
+    <h3>Peruvian Pink Flake(6g)</h3>
+    <p>A powerful stimulant drug made from the leaves of the coca plant.</p>
+    <p class="price">Price: $270 / 0.0027  BTC</p>
+    <button onclick="redirectToCheckout('Peruvian Pink Flake', 270, '0.0027  BTC', 'images/img3.jpeg')">Buy Now</button>
+   
+  </div>
+
+  <!-- Product 4 -->
+  <div class="product">
+    <img src="images/img4.jpeg" alt="Crack Cocaine" class="product-image">
+    <h3>Crack Cocaine(5g)</h3>
+    <p>Potent stimulant drug with a purity of 99.8%.</p>
+    <p class="price">Price: $280 / 0.0028  BTC</p>
+    <button onclick="redirectToCheckout('Crack Cocaine', 280, '0.0028  BTC', 'images/img4.jpeg')">Buy Now</button>
+  
+  </div>
+
+  <!-- Product 5 -->
+  <div class="product">
+    <img src="images/img5.jpeg" alt="Mexican Cocaine" class="product-image">
+    <h3>Mexican Cocaine(7g)</h3>
+    <p>Fast-acting cocaine with physical symptoms including a fast heart rate and sweating.</p>
+    <p class="price">Price: $240 / 0.0024  BTC</p>
+    <button onclick="redirectToCheckout('Mexican Cocaine', 280, '0.0024  BTC', 'images/img5.jpeg')">Buy Now</button>
+  
+  </div>
+
+  <!-- Product 6 -->
+  <div class="product">
+    <img src="images/img6.jpeg" alt="Uncut Peruvian Fishscale" class="product-image">
+    <h3>Uncut Peruvian Fishscale(5g)</h3>
+    <p>Pure untouched cocaine with a purity of 98.9%.</p>
+    <p class="price">Price: $300 / 0.0030  BTC</p>
+    <button onclick="redirectToCheckout('Uncut Peruvian Fishscale', 300, '0.0030  BTC', 'images/img6.jpeg')">Buy Now</button>
+ 
+  </div>
+
+  <!-- Product 7 -->
+  <div class="product">
+    <img src="images/img7.jpeg" alt="Coca Paste" class="product-image">
+    <h3>Coca Paste(5g)</h3>
+    <p>Contains 40% to 91% cocaine sulfate with varying alkaloids.</p>
+    <p class="price">Price: $230 / 0.0023  BTC</p>
+    <button onclick="redirectToCheckout('Coca Paste', 230, '0.0023  BTC', 'images/img7.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="product">
+    <img src="images/img8.jpeg" alt="Cocaine Powder" class="product-image">
+    <h3>Cocaine Powder(5g)</h3>
+    <p>A powerfully addictive stimulant drug made from the leaves of the coca plant.</p>
+    <p class="price">Price: $280 / 0.0028  BTC</p>
+    <button onclick="redirectToCheckout('Cocaine Powder', 280, '0.0028  BTC', 'images/img8.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 9 -->
+  <div class="product">
+    <img src="images/img9.jpeg" alt="Volkswagen Cocaine" class="product-image">
+    <h3>Volkswagen Cocaine(7g)</h3>
+    <p>Smooth and high-quality cocaine.</p>
+    <p class="price">Price: $250 / 0.0025  BTC</p>
+    <button onclick="redirectToCheckout('Volkswagen Cocaine', 250, '0.0025  BTC', 'images/img9.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 10 -->
+  <div class="product">
+    <img src="images/img10.jpeg" alt="Blue Crystal Meth" class="product-image">
+    <h3>Blue Crystal Meth(6g)</h3>
+    <p>Potent stimulant made from methamphetamine.</p>
+    <p class="price">Price: $290 / 0.0029  BTC</p>
+    <button onclick="redirectToCheckout('Blue Crystal Meth', 290, '0.0029  BTC', 'images/img10.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 11 -->
+  <div class="product">
+    <img src="images/img11.jpeg" alt="Black Tar Heroin" class="product-image">
+    <h3>Black Tar Heroin(5g)</h3>
+    <p>A dark, sticky form of heroin.</p>
+    <p class="price">Price: $350 / 0.0035  BTC</p>
+    <button onclick="redirectToCheckout('Black Tar Heroin', 350, '0.0035  BTC', 'images/img11.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 12 -->
+  <div class="product">
+    <img src="images/img12.jpeg" alt="Hydrochloride Cocaine" class="product-image">
+    <h3>Hydrochloride Cocaine(6g)</h3>
+    <p>A highly purified form of cocaine in its salt form.</p>
+    <p class="price">Price: $300 / 0.0030  BTC</p>
+    <button onclick="redirectToCheckout('Hydrochloride Cocaine', 350, '0.0035  BTC', 'images/img12.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 13 -->
+  <div class="product">
+    <img src="images/img13.jpeg" alt="White Colombian Cocaine" class="product-image">
+    <h3>White Colombian Cocaine(5g)</h3>
+    <p>Known for its purity and potency.</p>
+    <p class="price">Price: $280 / 0.0028  BTC</p>
+    <button onclick="redirectToCheckout('White Colombian Cocaine', 280, '0.0028  BTC', 'images/img13.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 14 -->
+  <div class="product">
+    <img src="images/img14.jpeg" alt="Ecstasy Pills" class="product-image">
+    <h3>Ecstasy Pills(20pills)</h3>
+    <p>Known for their psychoactive effects.</p>
+    <p class="price">Price: $150 / 0.0015  BTC</p>
+    <button onclick="redirectToCheckout('Ecstasy Pills', 150, '0.0015 BTC', 'images/img14.jpeg')">Buy Now</button>
+  </div>
+
+  <!-- Product 15 -->
+  <div class="product">
+    <img src="images/img15.jpeg" alt="Opium" class="product-image">
+    <h3>Opium(5g)</h3>
+    <p>A highly addictive narcotic extracted from the poppy plant.</p>
+    <p class="price">Price: $350 / 0.0035  BTC</p>
+    <button onclick="redirectToCheckout('Opium', 150, '0.0015  BTC', 'images/img15.jpeg')">Buy Now</button>
+  </div>
+
+</div>
+
+<script>
+  function redirectToCheckout(product, price, crypto, image) {
+      // Construct the URL for the checkout page with query parameters using string concatenation
+      const checkoutURL = 'checkout.html?product=' + encodeURIComponent(product) + 
+                          '&price=' + encodeURIComponent(price) + 
+                          '&crypto=' + encodeURIComponent(crypto) + 
+                          '&image=' + encodeURIComponent(image);
+      // Redirect to the constructed URL
+      window.location.href = checkoutURL;
+  }
+</script>
+
+<footer>
+  <p>&copy; 2025 BUY COCAINE STORE </p>
+</footer>
+</body>
+</html>

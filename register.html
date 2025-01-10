@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Caliva's Weed Store</title>
+    <style>
+        /* Register Page Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .register-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-top: 10px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <h1>Register</h1>
+
+        <form action="/register" method="POST">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
